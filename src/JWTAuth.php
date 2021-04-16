@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Tymon\JWTAuth\Providers\Auth\AuthInterface;
 use Tymon\JWTAuth\Providers\User\UserInterface;
+use Illuminate\Support\Str;
 
 class JWTAuth
 {
@@ -220,7 +221,7 @@ class JWTAuth
     {
         $header = $this->request->headers->get($header);
 
-        if (! starts_with(strtolower($header), $method)) {
+        if (! Str::startsWith(strtolower($header), $method)) {
             return false;
         }
 
