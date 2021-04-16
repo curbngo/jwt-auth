@@ -14,6 +14,7 @@ namespace Tymon\JWTAuth;
 use Tymon\JWTAuth\Claims\Claim;
 use Tymon\JWTAuth\Exceptions\PayloadException;
 use Tymon\JWTAuth\Validators\PayloadValidator;
+use Illuminate\Support\Arr;
 
 class Payload implements \ArrayAccess
 {
@@ -76,7 +77,7 @@ class Payload implements \ArrayAccess
                 return array_map([$this, 'get'], $claim);
             }
 
-            return array_get($this->toArray(), $claim, false);
+            return Arr::get($this->toArray(), $claim, false);
         }
 
         return $this->toArray();
@@ -122,7 +123,7 @@ class Payload implements \ArrayAccess
      */
     public function offsetGet($key)
     {
-        return array_get($this->toArray(), $key, []);
+        return Arr::get($this->toArray(), $key, []);
     }
 
     /**
