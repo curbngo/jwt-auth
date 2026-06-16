@@ -11,6 +11,15 @@
 
 [jwt-auth.com](https://jwt-auth.com)
 
+## Versions
+
+| Version | Laravel | Constraint |
+|---------|---------|------------|
+| `0.5.22` | 6, 7, 8 | `"curbngo/jwt-auth": "0.5.22"` (legacy, `0.5.x` branch) |
+| `^2.0` | 9, 10, 11, 12, 13 | `"curbngo/jwt-auth": "^2.0"` |
+
+See [UPGRADE-0.5-to-2.x.md](UPGRADE-0.5-to-2.x.md) when migrating from `0.5.x`.
+
 -----------------------------------
 
 ## Security
