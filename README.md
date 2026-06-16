@@ -2,6 +2,14 @@
 
 > JSON Web Token Authentication for Laravel
 
+## Legacy branch (0.5.x)
+
+This branch is **maintenance-only** for Laravel 6, 7, and 8 applications.
+
+- Pin in `composer.json`: `"curbngo/jwt-auth": "0.5.22"`
+- For Laravel 9 and newer, use version `^2.0` on the `master` branch
+- See [UPGRADE-0.5-to-2.x.md](UPGRADE-0.5-to-2.x.md) for migration notes
+
 [![Build Status](http://img.shields.io/travis/tymondesigns/jwt-auth/master.svg?style=flat-square)](https://travis-ci.org/tymondesigns/jwt-auth)
 [![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/tymondesigns/jwt-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/tymondesigns/jwt-auth/)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/tymondesigns/jwt-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/tymondesigns/jwt-auth/code-structure)
